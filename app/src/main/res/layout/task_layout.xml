@@ -1,9 +1,9 @@
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_height="wrap_content"
+    android:layout_height="150dp"
     android:layout_width="match_parent"
     app:cardElevation="4dp"
-    app:cardCornerRadius="8dp"
+    app:cardCornerRadius="25dp"
     android:layout_marginHorizontal="16dp"
     android:layout_marginVertical="8dp">
 
@@ -13,30 +13,51 @@
 
 
         <Button
-            android:id="@+id/delete_button"
+            android:id="@+id/edit_button1"
             android:layout_width="60dp"
             android:layout_height="30dp"
             android:layout_alignParentTop="true"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="35dp"
-            android:layout_toStartOf="@+id/edit_button"
-            android:background="@drawable/round_edge"
-            android:text="Delete"
-            android:textColor="#FF844B"
-            android:textSize="12sp" />
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"
+            android:layout_toStartOf="@+id/delete_button1"
+            android:background="@drawable/edit_button"
+            android:text="Edit"
+            android:textAllCaps="false"
+            android:fontFamily="@font/comic"
+            android:textStyle="bold"
+            android:textColor="#518099"
+            android:textSize="14dp" />
 
         <Button
-            android:id="@+id/edit_button"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:id="@+id/delete_button1"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="116dp"
-            android:background="@drawable/round_edge"
-            android:text="Edit"
-            android:textColor="#518099"
-            android:textSize="12sp" />
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/delete_button"
+            android:text="Delete"
+            android:textAllCaps="false"
+            android:fontFamily="@font/comic"
+            android:textStyle="bold"
+            android:textColor="#FF844B"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="65dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="10dp"
+            android:text="Mobile Application Development UI/UX Design and Report Submission"
+            android:fontFamily="@font/comic"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+             />
 
 
     </RelativeLayout>
