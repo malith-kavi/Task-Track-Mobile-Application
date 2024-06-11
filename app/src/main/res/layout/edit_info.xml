@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="25dp"
+    app:cardElevation="10dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="350dp"
+        android:layout_height="250dp">
+
+        <TextView
+            android:id="@+id/detailsEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/comic"
+            android:text="Edit Your Information"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="36dp"
+            tools:layout_editor_absoluteY="33dp" />
+
+        <EditText
+            android:id="@+id/changeUsernameEditText"
+            android:layout_width="280dp"
+            android:layout_height="45dp"
+            android:background="@drawable/edit_text"
+            android:fontFamily="@font/comic"
+            android:hint="Username"
+            android:paddingStart="25dp"
+            android:textColor="@color/purple_700"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="81dp" />
+
+        <EditText
+            android:id="@+id/changeEmailEditText"
+            android:layout_width="280dp"
+            android:layout_height="45dp"
+            android:background="@drawable/edit_text"
+            android:fontFamily="@font/comic"
+            android:hint="Enter Your Email"
+
+            android:paddingStart="25dp"
+            android:textColor="@color/purple_700"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="144dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="188dp"
+            tools:layout_editor_absoluteY="204dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnYes1"
+                android:layout_width="56dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/delete_button"
+                android:fontFamily="@font/comic"
+                android:text="Yes"
+                android:textAllCaps="false"
+                android:textColor="#FF844B"
+                android:textSize="14dp"
+                tools:layout_editor_absoluteX="119dp"
+                tools:layout_editor_absoluteY="117dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnCancel1"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:background="@drawable/edit_button"
+                android:fontFamily="@font/comic"
+                android:text="Cancel"
+                android:textAllCaps="false"
+                android:textColor="#518099"
+                android:textSize="14dp"
+                tools:layout_editor_absoluteX="175dp"
+                tools:layout_editor_absoluteY="117dp" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
