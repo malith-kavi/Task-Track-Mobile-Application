@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="280dp"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="start"
+    android:background="@drawable/dialog_back">
+
+    <TextView
+        android:id="@+id/textView_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit Your Information"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/comic"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="280dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edit_text"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="text"
+        android:paddingStart="25dp"
+        android:textSize="14dp"
+        android:fontFamily="@font/comic"
+        />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="280dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edit_text"
+        android:ems="10"
+        android:hint="Enter Your Email"
+        android:inputType="text"
+        android:paddingStart="25dp"
+        android:textSize="14dp"
+        android:fontFamily="@font/comic"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginBottom="10dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_no"
+            android:layout_width="75dp"
+            android:layout_height="30dp"
+            android:text="Cancel"
+            android:layout_marginEnd="20dp"
+            android:textSize="14dp"
+            android:textAllCaps="false"
+            android:background="@drawable/edit_button"
+            android:fontFamily="@font/comic"
+            android:textColor="#518099"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_yes"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:text="Update"
+            android:textSize="14dp"
+            android:textAllCaps="false"
+            android:background="@drawable/delete_button"
+            android:fontFamily="@font/comic"
+            android:textColor="#FF844B"/>
+
+    </LinearLayout>
+</LinearLayout>

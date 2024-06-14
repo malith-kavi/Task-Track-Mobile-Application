@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="240dp"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="start"
+    android:background="@drawable/dialog_back"
+    >
+
+    <TextView
+        android:id="@+id/textView_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Your Task"
+        android:textSize="14sp"
+        android:fontFamily="@font/comic"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/task"
+        android:layout_width="280dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/edit_text"
+        android:ems="10"
+        android:hint="Enter Your Task"
+        android:inputType="text"
+        android:padding="12dp"
+        android:textSize="14dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_cancel"
+            android:layout_width="75dp"
+            android:layout_height="30dp"
+            android:text="Cancel"
+            android:layout_marginEnd="20dp"
+            android:textSize="14dp"
+            android:textAllCaps="false"
+            android:background="@drawable/edit_button"
+            android:fontFamily="@font/comic"
+            android:textColor="#518099"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_add"
+            android:layout_width="75dp"
+            android:layout_height="30dp"
+            android:text="Enter"
+            android:textSize="14dp"
+            android:fontFamily="@font/comic"
+            android:textColor="#FF844B"
+            android:textAllCaps="false"
+            android:background="@drawable/delete_button"/>
+
+    </LinearLayout>
+</LinearLayout>

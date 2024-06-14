@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="150dp"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@drawable/dialog_back">
+
+    <TextView
+        android:id="@+id/textView_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Do You Want to Delete the Task?"
+        android:textSize="14dp"
+        android:fontFamily="@font/comic"
+        android:paddingBottom="16dp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="30dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_no"
+            android:layout_width="75dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/edit_button"
+            android:text="Cancel"
+            android:fontFamily="@font/comic"
+            android:textColor="#518099"
+            android:textAllCaps="false"
+            android:textSize="14dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_yes"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:background="@drawable/delete_button"
+            android:text="Delete"
+            android:textAllCaps="false"
+            android:fontFamily="@font/comic"
+            android:textColor="#FF844B"
+            android:textSize="14dp" />
+
+    </LinearLayout>
+</LinearLayout>
