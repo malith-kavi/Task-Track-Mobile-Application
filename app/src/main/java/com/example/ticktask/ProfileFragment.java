@@ -23,7 +23,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class ProfileFragment extends Fragment {
 
-    TextView textView_name1, textView_email, textView_name2;
+    TextView textView_name, textView_email;
     AppCompatButton btn_edit_profile;
     FloatingActionButton btn_logout;
 
@@ -41,10 +41,10 @@ public class ProfileFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_profile, container, false);
 
 
-        textView_name2 = view.findViewById(R.id.name2);
+        textView_name = view.findViewById(R.id.name2);
         textView_email = view.findViewById(R.id.email);
         btn_logout = view.findViewById(R.id.btn_logout);
-        btn_edit_profile = view.findViewById(R.id.btn_editProfile); // Assuming you have an edit profile button
+        btn_edit_profile = view.findViewById(R.id.btn_editProfile);
 
         sharedPreferences = getActivity().getSharedPreferences(SHARED_PREF_NAME, MODE_PRIVATE);
 
@@ -52,7 +52,7 @@ public class ProfileFragment extends Fragment {
         String email = sharedPreferences.getString(KEY_EMAIL, null);
 
         if (name != null && email != null) {
-            textView_name2.setText(name);
+            textView_name.setText(name);
             textView_email.setText(email);
         }
 
@@ -143,8 +143,7 @@ public class ProfileFragment extends Fragment {
                 editor.putString(KEY_EMAIL, newEmail);
                 editor.apply();
 
-                textView_name1.setText(newName);
-                textView_name2.setText(newName);
+                textView_name.setText(newName);
                 textView_email.setText(newEmail);
 
                 dialog.dismiss();
