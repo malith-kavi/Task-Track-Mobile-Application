@@ -48,12 +48,12 @@ public class SignUp extends AppCompatActivity {
         sharedPreferences = getSharedPreferences(SHARED_PREF_NAME, MODE_PRIVATE);
 
         // Check if user is already logged in
-        boolean isLoggedIn = sharedPreferences.getBoolean(KEY_IS_LOGGED_IN, false);
-        if (isLoggedIn) {
-            Intent intent = new Intent(getApplicationContext(), NavigationView.class);
-            startActivity(intent);
-            finish();
-        }
+//        boolean isLoggedIn = sharedPreferences.getBoolean(KEY_IS_LOGGED_IN, false);
+//        if (isLoggedIn) {
+//            Intent intent = new Intent(getApplicationContext(), NavigationView.class);
+//            startActivity(intent);
+//            finish();
+//        }
 
         btn_signup.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -81,7 +81,7 @@ public class SignUp extends AppCompatActivity {
                     clearTasksSharedPreferences();
 
                     // Start Login activity
-                    Intent intent = new Intent(getApplicationContext(), Login.class);
+                    Intent intent = new Intent(getApplicationContext(), NavigationView.class);
                     startActivity(intent);
                     finish();
 
