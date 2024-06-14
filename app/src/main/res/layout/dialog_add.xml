@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="350dp"
+    android:layout_width="match_parent"
     android:layout_height="240dp"
     android:orientation="vertical"
     android:padding="24dp"
@@ -26,6 +26,7 @@
         android:layout_marginTop="30dp"
         android:background="@drawable/edit_text"
         android:ems="10"
+        android:textColorHint="#518099"
         android:hint="Enter Your Task"
         android:inputType="text"
         android:padding="12dp"

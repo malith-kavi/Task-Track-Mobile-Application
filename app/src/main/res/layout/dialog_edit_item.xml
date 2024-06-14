@@ -26,6 +26,7 @@
         android:layout_marginTop="20dp"
         android:background="@drawable/edit_text"
         android:ems="10"
+        android:textColorHint="#518099"
         android:paddingStart="25dp"
         android:hint="Edit"
         android:inputType="text"
