@@ -57,6 +57,7 @@
             android:fontFamily="@font/comic"
             android:hint="Enter Your User Name"
             android:inputType="text"
+            android:textColorHint="#518099"
             android:padding="12dp"
             android:paddingStart="25dp"
             android:textSize="14dp" />
@@ -72,6 +73,7 @@
             android:fontFamily="@font/comic"
             android:hint="Enter Your Email"
             android:inputType="text"
+            android:textColorHint="#518099"
             android:padding="12dp"
             android:paddingStart="25dp"
             android:textSize="14dp" />
@@ -87,6 +89,7 @@
             android:fontFamily="@font/comic"
             android:hint="Enter Your Password"
             android:inputType="textPassword"
+            android:textColorHint="#518099"
             android:padding="12dp"
             android:paddingStart="25dp"
             android:textSize="14dp" />
