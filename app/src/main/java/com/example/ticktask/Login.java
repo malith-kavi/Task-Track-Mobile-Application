@@ -19,7 +19,7 @@ public class Login extends AppCompatActivity {
     TextView btn_signup;
 
     // Shared Preferences keys
-    private static final String SHARED_PREF_NAME = "tickTask";
+    private static final String SHARED_PREF_NAME = "TaskTrack";
     private static final String KEY_EMAIL = "email";
     private static final String KEY_PASSWORD = "password";
     private static final String KEY_IS_LOGGED_IN = "isLoggedIn";
@@ -43,6 +43,7 @@ public class Login extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
 
         // Check if user is already logged in
         boolean isLoggedIn = sharedPreferences.getBoolean(KEY_IS_LOGGED_IN, false);
